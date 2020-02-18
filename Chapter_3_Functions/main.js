@@ -56,3 +56,23 @@ function even(n) {
   // Write a function countBs that takes a string as its only argument and returns a number that indicates how many uppercase “B” characters there are in the string.
   
   // Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “B” characters). Rewrite countBs to make use of this new function.
+
+  //Identify the string and loop through each character to find the special character. 
+
+  // 1 Create a function to count the Bs in the string which is passed through as a parameter
+  // 2 define a count which will count all occurences of the letter B
+  // 3 Loop through the string using .length
+  // 4 Create condition that whatever character matches B and everytime it will increase the count
+  // 5 Return the count. Must be in the function. 
+
+  function countBs(string){
+    let count = 0;
+    for(let n = 0; n < string.length; n++){
+    if(string.charAt(n) === "B"){
+      count ++;
+      }
+    }
+    return count
+  };
+
+  console.log(countBs("BBC"));
